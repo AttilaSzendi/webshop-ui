@@ -8,6 +8,8 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import axios from 'axios'
 
+axios.defaults.baseURL = process.env.VUE_APP_BASE_URL
+
 Vue.prototype.axios = axios
 
 Vue.use(BootstrapVue)
